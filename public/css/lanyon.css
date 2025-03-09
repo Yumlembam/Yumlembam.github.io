@@ -311,12 +311,49 @@ a.sidebar-nav-item:focus {
 .page-title,
 .post-title,
 .post-title a {
-  color: #303030;
+  color: #9b1e1e;
 }
+/* Over-the-Top Page and Post Title Styling */
+/* Bold, Neon-Glow Page and Post Title */
+
+/* Bold, Neon-Glow Page and Post Title */
+/* Cartoonish Page and Post Title */
+/* Cartoonish Page and Post Title */
 .page-title,
 .post-title {
   margin-top: 0;
+  text-align: center;          
+  font-size: 2rem;             
+  font-weight: 900;            
+  text-transform: uppercase;   
+  letter-spacing: 3px;         
+  color: #af2424;              
+  text-shadow: 
+    -4px -4px 0px #000,      
+     4px -4px 0px #000,  
+    -4px  4px 0px #000,  
+     4px  4px 0px #000,
+     0px  0px 10px rgba(0, 0, 0, 0.5); 
+  font-family: 'Luckiest Guy', cursive; 
+  animation: cartoon-bounce 1.5s infinite ease-in-out; /* Apply animation */
 }
+
+/* Import Google Font for Cartoon Style */
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
+/* Cartoonish Bounce Animation */
+@keyframes cartoon-bounce {
+  0%   { transform: scale(1) rotate(0deg); }
+  20%  { transform: scale(1.1, 0.9) rotate(-2deg); } /* Squash */
+  40%  { transform: scale(0.9, 1.1) rotate(2deg); }  /* Stretch */
+  60%  { transform: scale(1.05, 0.95) rotate(-2deg); } /* Slight bounce */
+  80%  { transform: scale(0.95, 1.05) rotate(2deg); }
+  100% { transform: scale(1) rotate(0deg); } /* Back to normal */
+}
+
+
+
+
 
 /* Meta data line below post title */
 .post-date {
@@ -558,12 +595,16 @@ a.pagination-item:hover {
 }
 
 .banner-image {
-  width: 100%;          /* Makes it responsive */
-  max-width: 1024px;    /* Prevents it from being too wide */
+  width: 100%;          /* Full width of the container */
+  max-width: 1000px;    /* Ensures it doesn't get too wide */
   height: auto;         /* Maintains aspect ratio */
-  max-height: 400px;    /* Limits the height so it doesn’t take over the page */
+  max-height: 300px;    /* Keeps it rectangular */
   display: block;
   margin: 0 auto;
-  object-fit: contain;  /* Ensures the whole image is shown */
+  object-fit: contain;  /* Ensures the whole image is shown without cropping */
 }
+/* .page-title {
+  text-align: center;
+} */
+
 
