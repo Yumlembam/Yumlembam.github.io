@@ -556,3 +556,14 @@ a.pagination-item:hover {
 .layout-reverse.sidebar-overlay #sidebar-checkbox:checked ~ .sidebar {
   box-shadow: -.25rem 0 .5rem rgba(0,0,0,.1);
 }
+
+.banner-image {
+  width: 100%;          /* Makes it responsive */
+  max-width: 1024px;    /* Prevents it from being too wide */
+  height: auto;         /* Maintains aspect ratio */
+  max-height: 400px;    /* Limits the height so it doesn’t take over the page */
+  display: block;
+  margin: 0 auto;
+  object-fit: contain;  /* Ensures the whole image is shown */
+}
+
