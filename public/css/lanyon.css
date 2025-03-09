@@ -323,33 +323,45 @@ a.sidebar-nav-item:focus {
 .post-title {
   margin-top: 0;
   text-align: center;          
-  font-size: 2rem;             
+  font-size: 2rem;  /* Default size for desktops */
   font-weight: 900;            
   text-transform: uppercase;   
   letter-spacing: 3px;         
   color: #af2424;              
-  text-shadow: 
-    -4px -4px 0px #000,      
-     4px -4px 0px #000,  
-    -4px  4px 0px #000,  
-     4px  4px 0px #000,
-     0px  0px 10px rgba(0, 0, 0, 0.5); 
   font-family: 'Luckiest Guy', cursive; 
   animation: cartoon-bounce 1.5s infinite ease-in-out; /* Apply animation */
 }
 
-/* Import Google Font for Cartoon Style */
-@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+/* Responsive Adjustments for Smaller Screens */
+@media (max-width: 768px) { /* Tablets */
+  .page-title,
+  .post-title {
+    font-size: 1.8rem; /* Slightly smaller */
+    letter-spacing: 2px;
+  }
+}
+
+@media (max-width: 480px) { /* Mobile Phones */
+  .page-title,
+  .post-title {
+    font-size: 1.6rem; /* Smaller for mobile */
+    letter-spacing: 1.5px;
+  }
+}
 
 /* Cartoonish Bounce Animation */
 @keyframes cartoon-bounce {
   0%   { transform: scale(1) rotate(0deg); }
-  20%  { transform: scale(1.1, 0.9) rotate(-2deg); } /* Squash */
-  40%  { transform: scale(0.9, 1.1) rotate(2deg); }  /* Stretch */
-  60%  { transform: scale(1.05, 0.95) rotate(-2deg); } /* Slight bounce */
-  80%  { transform: scale(0.95, 1.05) rotate(2deg); }
+  20%  { transform: scale(1.05, 0.95) rotate(-1deg); } /* Less exaggerated */
+  40%  { transform: scale(0.95, 1.05) rotate(1deg); }  
+  60%  { transform: scale(1.02, 0.98) rotate(-1deg); } /* Smooth effect */
+  80%  { transform: scale(0.98, 1.02) rotate(1deg); }
   100% { transform: scale(1) rotate(0deg); } /* Back to normal */
 }
+
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
 
 
 
