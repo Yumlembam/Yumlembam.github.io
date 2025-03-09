@@ -2,7 +2,7 @@
 title:               Rahul Yumlembam
 tagline:             'Machine Story'
 description:         'A no-nonsense blog theme—like a well-tuned ML model, minimal overfitting, maximum readability.'
-url:                 'https://github.com/Yumlembam/Yumlembam.github.io'
+url:                 'https://yumlembam.github.io'
 baseurl:             ''
 paginate:            5
 permalink:           pretty
@@ -10,7 +10,7 @@ permalink:           pretty
 # About/contact
 author:
   name:              Rahul Yumlembam
-  url:               'https://github.com/Yumlembam/Yumlembam.github.io'
+  url:               'https://yumlembam.github.io'
   email:             rahul@example.com  # Update with your real email if needed
 
 # Plugins
