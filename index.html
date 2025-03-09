@@ -3,81 +3,79 @@ layout: page
 title: Machine Story
 ---
 
-<body class="theme-base-08">
-  <!-- Banner Image -->
-  <img src="{{ '/assets/images/profile.jpg' | relative_url }}" alt="Banner Image" class="banner-image">
+<!-- Banner Image -->
+<img src="{{ '/assets/images/profile.jpg' | relative_url }}" alt="Banner Image" class="banner-image">
 
-  <h1>Coming Soon 😊</h1>
+<h1>Coming Soon 😊</h1>
 
-  <p>This is my personal page where I write things that I learn and share with people. I write about machine learning, deep learning, research papers, and review interesting machine learning podcasts.</p>
+<p>This is my personal page where I write things that I learn and share with people. I write about machine learning, deep learning, research papers, and review interesting machine learning podcasts.</p>
 
-  <p>Find more in my posts in the sidebar or check out some of my recent posts below:</p>
+<p>Find more in my posts in the sidebar or check out some of my recent posts below:</p>
 
-  <ul>
-    {% assign recent_posts = site.posts | limit:5 %}
-    {% for post in recent_posts %}
-      <li>
-        <a href="{{ post.url | absolute_url }}">{{ post.title }}</a>
-        <small>{{ post.date | date: "%B %d, %Y" }}</small>
-      </li>
-    {% endfor %}
-  </ul>
+<ul>
+  {% assign recent_posts = site.posts | limit:5 %}
+  {% for post in recent_posts %}
+    <li>
+      <a href="{{ post.url | absolute_url }}">{{ post.title }}</a>
+      <small>{{ post.date | date: "%B %d, %Y" }}</small>
+    </li>
+  {% endfor %}
+</ul>
 
-  <h2>Join My Mailing List</h2>
-  <p>Stay in the loop with my latest insights and updates on machine learning. Sign up to receive exclusive content, research breakdowns, and more directly in your inbox!</p>
+<h2>Join My Mailing List</h2>
+<p>Stay in the loop with my latest insights and updates on machine learning. Sign up to receive exclusive content, research breakdowns, and more directly in your inbox!</p>
 
-  <div id="mc_embed_shell">
-    <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">
-    <style type="text/css">
-      #mc_embed_signup { background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; width: 100%; max-width: 600px; margin: 20px auto; padding: 20px; border-radius: 8px; box-shadow: 0px 2px 5px rgba(0,0,0,0.1); }
-      .mc-field-group input { width: 100%; padding: 10px; margin-top: 5px; border: 1px solid #ccc; border-radius: 4px; }
-      .button { background-color: #007bff; color: white; padding: 10px 15px; border: none; border-radius: 4px; cursor: pointer; }
-      .button:hover { background-color: #0056b3; }
+<!-- Mailchimp Signup Form -->
+<div id="mc_embed_shell">
+  <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">
+  <style type="text/css">
+    #mc_embed_signup { background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; width: 100%; max-width: 600px; margin: 20px auto; padding: 20px; border-radius: 8px; box-shadow: 0px 2px 5px rgba(0,0,0,0.1); }
+    .mc-field-group input { width: 100%; padding: 10px; margin-top: 5px; border: 1px solid #ccc; border-radius: 4px; }
+    .button { background-color: #007bff; color: white; padding: 10px 15px; border: none; border-radius: 4px; cursor: pointer; }
+    .button:hover { background-color: #0056b3; }
+  </style>
+
+  <div id="mc_embed_signup">
+    <form action="https://github.us3.list-manage.com/subscribe/post?u=a0ebe18b35971f4cd68779acc&amp;id=c19b319809&amp;f_id=000ab8e2f0" 
+          method="post" 
+          id="mc-embedded-subscribe-form" 
+          name="mc-embedded-subscribe-form" 
+          class="validate" 
+          target="_blank">
       
-    </style>
+      <div id="mc_embed_signup_scroll">
+        <h3>Subscribe to My Newsletter</h3>
+        <p>Get the latest research insights, deep learning updates, and curated ML content straight to your inbox.</p>
 
-    <div id="mc_embed_signup">
-      <form action="https://github.us3.list-manage.com/subscribe/post?u=a0ebe18b35971f4cd68779acc&amp;id=c19b319809&amp;f_id=000ab8e2f0" 
-            method="post" 
-            id="mc-embedded-subscribe-form" 
-            name="mc-embedded-subscribe-form" 
-            class="validate" 
-            target="_blank">
-        
-        <div id="mc_embed_signup_scroll">
-          <h3>Subscribe to My Newsletter</h3>
-          <p>Get the latest research insights, deep learning updates, and curated ML content straight to your inbox.</p>
+        <div class="mc-field-group">
+          <label for="mce-EMAIL">Email Address <span class="asterisk">*</span></label>
+          <input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="">
+        </div>
 
-          <div class="mc-field-group">
-            <label for="mce-EMAIL">Email Address <span class="asterisk">*</span></label>
-            <input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="">
-          </div>
+        <div id="mce-responses" class="clear foot">
+          <div class="response" id="mce-error-response" style="display: none;"></div>
+          <div class="response" id="mce-success-response" style="display: none;"></div>
+        </div>
 
-          <div id="mce-responses" class="clear foot">
-            <div class="response" id="mce-error-response" style="display: none;"></div>
-            <div class="response" id="mce-success-response" style="display: none;"></div>
-          </div>
+        <div aria-hidden="true" style="position: absolute; left: -5000px;">
+          <input type="text" name="b_a0ebe18b35971f4cd68779acc_c19b319809" tabindex="-1" value="">
+        </div>
 
-          <div aria-hidden="true" style="position: absolute; left: -5000px;">
-            <input type="text" name="b_a0ebe18b35971f4cd68779acc_c19b319809" tabindex="-1" value="">
-          </div>
-
-          <div class="optionalParent">
-            <div class="clear foot">
-              <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button" value="Subscribe">
-            </div>
+        <div class="optionalParent">
+          <div class="clear foot">
+            <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button" value="Subscribe">
           </div>
         </div>
-      </form>
-    </div>
-    
-    <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
-    <script type="text/javascript">
-      (function($) {
-        window.fnames = new Array(); window.ftypes = new Array();
-        fnames[0]='EMAIL'; ftypes[0]='email';
-      }(jQuery));
-      var $mcj = jQuery.noConflict(true);
-    </script>
+      </div>
+    </form>
   </div>
-</body>
+  
+  <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
+  <script type="text/javascript">
+    (function($) {
+      window.fnames = new Array(); window.ftypes = new Array();
+      fnames[0]='EMAIL'; ftypes[0]='email';
+    }(jQuery));
+    var $mcj = jQuery.noConflict(true);
+  </script>
+</div>

@@ -43,3 +43,5 @@ node_modules
 bower_components
 Gemfile
 Gemfile.lock
+_config.yml
+
