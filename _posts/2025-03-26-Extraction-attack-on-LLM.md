@@ -28,7 +28,7 @@ Consider a simple model where:
 - **Hidden Dimension (h):** 2  
 - **Logit Dimension (l):** 4
 
-We define a projection matrix \(W\) (size \(4 \times 2\)):
+We define a projection matrix \(W\) $$4 \times 2$$:
 
 $$
 W = \begin{bmatrix}
@@ -95,7 +95,7 @@ $$
 This means the extraction recovers \(W\) only up to an internal symmetry (an affine transformation, typically a rotation and scaling) of the hidden space.
 
 **Experimental Findings:**  
-- The paper shows that by aligning the extracted matrix $$U \cdot \Sigma$$ with the actual \(W\) (via a least-squares approach), the reconstruction error can be extremely low—on the order of \(10^{-4}\) RMS error.
+- The paper shows that by aligning the extracted matrix $$U \cdot \Sigma$$ with the actual \(W\) (via a least-squares approach), the reconstruction error can be extremely low—on the order of $$10^{-4}$$ RMS error.
 - Such high-fidelity recovery confirms that the output layer is low-rank and that its structure is susceptible to extraction attacks.
 
 **Implications:**  
