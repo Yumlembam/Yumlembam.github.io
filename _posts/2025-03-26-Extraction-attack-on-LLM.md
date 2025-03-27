@@ -5,6 +5,7 @@ date: 2025-03-26
 ---
 
 # Understanding Extraction Attacks on Language Models through Simple Examples
+- Written by: Rahul Yumlembam
 
 Large Language Models (LLMs) such as GPT-4, PaLM-2, and others have revolutionized natural language processing by enabling human-like text generation and a myriad of applications. However, behind their impressive performance lies a critical security vulnerability: extraction attacks. Recent research has shown that even black-box models—accessed solely via APIs—can be exploited to recover sensitive internal parameters. In particular, Carlini et al. (2024) demonstrated that an adversary can extract the embedding projection layer (and thus determine the hidden dimension) with relatively low cost.
 
